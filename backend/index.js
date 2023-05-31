@@ -10,7 +10,7 @@ import { checkAuth, handleValidation } from './src/utils/index.js'
 import { TableController, UserController } from './src/controllers/index.js'
 
 mongoose
-  .connecdt('mongodb+srv://alex:a98d21c17@cluster0.jvb3f.mongodb.net/?retryWrites=true&w=majority',
+  .connect('mongodb+srv://alex:a98d21c17@cluster0.jvb3f.mongodb.net/?retryWrites=true&w=majority',
 	
   {
     // useCreateIndex: true,
