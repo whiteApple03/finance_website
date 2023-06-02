@@ -103,6 +103,7 @@ const store = createStore({
 		.then((res) => {
 			context.commit("pushToken", res.data.token)
 			store.commit("changeAuth", true)
+			store.commit("userInfo", {login: authData.login})
 			context.commit("status", res.status)
 		})
 		.catch((err) => context.commit("status", err.response.status))

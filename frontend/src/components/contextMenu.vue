@@ -3,7 +3,6 @@
 		<div>
 			<span>{{ user.login }}</span>
 			<span>{{ user.marks }}</span>
-
 		</div>
 		<button @click="exit($event)">выйти</button>
 	</section>
